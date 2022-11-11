@@ -44,6 +44,10 @@ chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
 function getInfo() {
     var yuan = document.getElementById("url_input").value;
 
+    // loader
+    loader = '<span><i class="loader fa fa-spinner" aria-hidden="true"></i></span>';
+    document.getElementById("result").innerHTML = loader;
+
     // Check if the input is empty
     if (yuan == "") {
         alert("Le champ est vide");

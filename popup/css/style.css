@@ -1,305 +1,364 @@
-html{
-    margin: 0;
-    padding: 0
+html {
+  margin: 0;
+  padding: 0
 }
 
 body {
-    background-color: #101822;
-    font-family: Montserrat, sans-serif;
-    margin: auto auto;
-    padding: 0;
-    width: 400px;
-    height: 450px;
-    color: #fff;
-    overflow: hidden;
+  background-color: #101822;
+  font-family: Montserrat, sans-serif;
+  margin: auto auto;
+  padding: 0;
+  width: 400px;
+  height: 500px;
+  color: #fff;
+  overflow: hidden;
 }
 
 
 
 
-.settings{
-    float: right;
-    margin-right: 15px;
-    
+.settings {
+  float: right;
+  margin-right: 15px;
+
+}
+
+.btn {
+  margin-top: 10px;
+  margin-right: 6px;
+  backface-visibility: hidden;
+  background: #ff4654;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 0.2rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.btn:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.btn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.btn:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.btn:focus {
+  outline: 0 solid transparent;
+}
+
+.btn:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.btn:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.btn:not(:disabled):active {
+  transform: translateY(.125rem);
 }
 
 .manage {
-    background-image: url(../images/wave.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #18212A;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
+  background-image: url(../images/wave.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #18212A;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
 
 }
 
 
 
 .red {
-    color: #f53844;
+  color: #f53844;
 }
 
-.explication{
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+.explication {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
-.lock-img{
-    float: right;
-    border-radius: 10%;
-    margin-right: 30px;
-    margin-top: 30px;
+.lock-img {
+  float: right;
+  border-radius: 10%;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
-.manage-title{
-    margin-bottom: 30px;
+.manage-title {
+  margin-bottom: 30px;
 }
 
 .manage_btn {
-    backface-visibility: hidden;
-    background: #ff4654;
-    border: 0;
-    border-radius: .375rem;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Circular,Helvetica,sans-serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    line-height: 1.3;
-    padding: 1rem 1.25rem;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transform: translateZ(0) scale(1);
-    transition: transform .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .manage_btn:disabled {
-    color: #787878;
-    cursor: auto;
-  }
-  
-  .manage_btn:not(:disabled):hover {
-    transform: scale(1.05);
-  }
-  
-  .manage_btn:not(:disabled):hover:active {
-    transform: scale(1.05) translateY(.125rem);
-  }
-  
-  .manage_btn:focus {
-    outline: 0 solid transparent;
-  }
-  
-  .manage_btn:focus:before {
-    border-width: .125rem;
-    content: "";
-    left: calc(-1*.375rem);
-    pointer-events: none;
-    position: absolute;
-    top: calc(-1*.375rem);
-    transition: border-radius;
-    user-select: none;
-  }
-  
-  .manage_btn:focus:not(:focus-visible) {
-    outline: 0 solid transparent;
-  }
-  
-  .manage_btn:not(:disabled):active {
-    transform: translateY(.125rem);
-  }
-
-.colone-container{
-    text-align: center;
-    margin-top: 20px;
+  backface-visibility: hidden;
+  background: #ff4654;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.add{
-    background-image: url(../images/waveadd.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #18212A;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
+.manage_btn:disabled {
+  color: #787878;
+  cursor: auto;
 }
 
-.add-colone{
-    margin-bottom: 30px;
+.manage_btn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.manage_btn:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.manage_btn:focus {
+  outline: 0 solid transparent;
+}
+
+.manage_btn:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.manage_btn:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.manage_btn:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+.colone-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add {
+  background-image: url(../images/waveadd.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #18212A;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.add-colone {
+  margin-bottom: 30px;
 }
 
 
-.add-title{
-    font-size: 17px;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 3px 0px;
-    margin-bottom: 30px;
+.add-title {
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 3px 0px;
+  margin-bottom: 30px;
 }
 
 .add_btn {
-    backface-visibility: hidden;
-    background: #2c55d5;
-    border: 0;
-    border-radius: .375rem;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Circular,Helvetica,sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    line-height: 1.3;
-    padding: 10px 15px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transform: translateZ(0) scale(1);
-    transition: transform .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .add_btn:disabled {
-    color: #787878;
-    cursor: auto;
-  }
-  
-  .add_btn:not(:disabled):hover {
-    transform: scale(1.05);
-  }
-  
-  .add_btn:not(:disabled):hover:active {
-    transform: scale(1.05) translateY(.125rem);
-  }
-  
-  .add_btn:focus {
-    outline: 0 solid transparent;
-  }
-  
-  .add_btn:focus:before {
-    border-width: .125rem;
-    content: "";
-    left: calc(-1*.375rem);
-    pointer-events: none;
-    position: absolute;
-    top: calc(-1*.375rem);
-    transition: border-radius;
-    user-select: none;
-  }
-  
-  .add_btn:focus:not(:focus-visible) {
-    outline: 0 solid transparent;
-  }
-  
-  .add_btn:not(:disabled):active {
-    transform: translateY(.125rem);
-  }
-.rdpassword{
-    background-image: url(../images/waverd.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #18212A;
-    border-radius: 10px;
-    margin-left: 5px;
-    padding-right: 5px;
+  backface-visibility: hidden;
+  background: #2c55d5;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 10px 15px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add_btn:disabled {
+  color: #787878;
+  cursor: auto;
+}
+
+.add_btn:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.add_btn:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.add_btn:focus {
+  outline: 0 solid transparent;
+}
+
+.add_btn:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.add_btn:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.add_btn:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+.rdpassword {
+  background-image: url(../images/waverd.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #18212A;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding-right: 5px;
 
 }
 
-.rdpassword-colone{
-    margin-bottom: 30px;
+.rdpassword-colone {
+  margin-bottom: 30px;
 }
 
 
-.rdpassword-title{
-    font-size: 17px;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 3px 0px;
-    margin-bottom: 30px;
+.rdpassword-title {
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 3px 0px;
+  margin-bottom: 30px;
 }
 
 .rdpassword_btn {
-    backface-visibility: hidden;
-    background: #dda91e;
-    border: 0;
-    border-radius: .375rem;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Circular,Helvetica,sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -.01em;
-    line-height: 1.3;
-    padding: 10px 15px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transform: translateZ(0) scale(1);
-    transition: transform .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .rdpassword_btn:disabled {
-    color: #787878;
-    cursor: auto;
-  }
-  
-  .rdpassword_btn:not(:disabled):hover {
-    transform: scale(1.05);
-  }
-  
-  .rdpassword_btn:not(:disabled):hover:active {
-    transform: scale(1.05) translateY(.125rem);
-  }
-  
-  .rdpassword_btn:focus {
-    outline: 0 solid transparent;
-  }
-  
-  .rdpassword_btn:focus:before {
-    border-width: .125rem;
-    content: "";
-    left: calc(-1*.375rem);
-    pointer-events: none;
-    position: absolute;
-    top: calc(-1*.375rem);
-    transition: border-radius;
-    user-select: none;
-  }
-  
-  .rdpassword_btn:focus:not(:focus-visible) {
-    outline: 0 solid transparent;
-  }
-  
-  .rdpassword_btn:not(:disabled):active {
-    transform: translateY(.125rem);
-  }
+  backface-visibility: hidden;
+  background: #dda91e;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 10px 15px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.rdpassword_btn:disabled {
+  color: #787878;
+  cursor: auto;
+}
 
+.rdpassword_btn:not(:disabled):hover {
+  transform: scale(1.05);
+}
 
+.rdpassword_btn:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
 
+.rdpassword_btn:focus {
+  outline: 0 solid transparent;
+}
+
+.rdpassword_btn:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.rdpassword_btn:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.rdpassword_btn:not(:disabled):active {
+  transform: translateY(.125rem);
+}
