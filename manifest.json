@@ -24,7 +24,7 @@
             "128": "icon/icon128.png"
         },
         "default_title": "Yupoo Optimizer",
-        "default_popup": "popup/sellers.html"
+        "default_popup": "popup/index.html"
     },
 
     "permissions": [
