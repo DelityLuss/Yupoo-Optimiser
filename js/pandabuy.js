@@ -78,7 +78,7 @@ function panda() {
 
     if (yupoo == true) {
         if (taobao == "" && wedian == "") {
-            alert("No taobao or weidian link found");
+            showErrors("Aucun lien taobao ou weidian trouvé", "#ff4654");
         }
         else if (taobao != "" && wedian == "") {
 
@@ -101,4 +101,22 @@ function panda() {
             alert("Error");
         }
     }
+    else 
+    {
+        showErrors("Aucun lien Yupoo", "#ffa502");
+
+    }
+}
+
+
+
+function showErrors(error, color) {
+
+    payload = "<span style='color:" + color + "'>" + error + "</span>";
+    document.getElementById("result").innerHTML = payload;
+    setTimeout(function () {
+        document.getElementById("result").innerHTML = "";
+    }, 4000);
+    
+   
 }

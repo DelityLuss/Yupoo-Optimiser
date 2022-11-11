@@ -9,9 +9,10 @@ body {
   margin: auto auto;
   padding: 0;
   width: 400px;
-  height: 500px;
+  height: 450px;
   color: #fff;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 
@@ -105,12 +106,16 @@ body {
   color: #f53844;
 }
 
+
+.compenent{
+  margin-bottom: 20px;
+}
+
 .explication {
   font-size: 15px;
   margin-left: 20px;
-  margin-top: 50px;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .lock-img {
@@ -188,6 +193,7 @@ body {
 .colone-container {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .add {
@@ -274,6 +280,10 @@ body {
 
 .add_btn:not(:disabled):active {
   transform: translateY(.125rem);
+}
+
+.result{
+  max-width: 200px;
 }
 
 .rdpassword {

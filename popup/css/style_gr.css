@@ -43,7 +43,7 @@ body {
 
 .main {
   overflow: auto;
-  max-height: 300px;
+  max-height: 330px;
 }
 
 
@@ -55,7 +55,7 @@ body {
 
 .explication {
   font-size: 15px;
-  margin-top: 50px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
