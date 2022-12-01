@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Yupoo Optimizer",
     "author": "Luss",
-    "version": "1.0",
+    "version": "1.2",
     "description": "Yupoo Optimizer is a chrome extension that helps you to convert yuan to euro and get links for PandaBuy",
     "icons": {
         "16": "icon/icon16.png",
